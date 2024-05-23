@@ -1,6 +1,8 @@
 # Conda-Installation-Tutorial-Windows-
 This is a tutorial for installing CUDA (v11.8) and cuDNN (8.6.9) to enable programming Pytorch with GPU. It also mentioned about the solution of unabling for Pytorch to detect the CUDA core.
 
+**Claim:** This tutorial was done when I came back from abroad at NAU. I found my computer like a stranger so I devoted myself to re-install the whole system. Thus the CUDA environment needs to be re-configured, where I have met several obstacles while doing this although it's my third (or fourth time...? I do not remember) to do this. So I decided to do a full-scope tutorial to record the problem I met and its corresponding solution which may help me in the future and others.
+
 **Suggestion: Install the CUDA first then install the corresponding CUDA-compatible Pytorch**
 
 ### 1. Check the compatibility:
@@ -44,4 +46,4 @@ should return ```True``` value
 
 ### 7. Some torch functions that may helps debugging if error occurs:
 
-Click Here
+Click [here](https://github.com/TyBruceChen/Conda-Installation-Tutorial-Windows-/blob/main/debug.ipynb) 
