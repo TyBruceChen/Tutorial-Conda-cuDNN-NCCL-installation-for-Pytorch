@@ -39,7 +39,7 @@ sudo apt-get upgrade
 
 ### Mounting extra disk space (optional):
 
-### SSH remote login through FRP (Fast Reverse Proxy) (recommended, optional):
+### SSH remote login through [FRP](https://github.com/fatedier/frp) (Fast Reverse Proxy) (recommended, optional):
 
 ### Install NVIDIA driver:
 Preparation: Install necessities first:
@@ -147,9 +147,10 @@ Permanent:
 ```pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/```
 * Verification: ```pip config get global.index-url```
 
-### Replace some download sources in Python packages & Install convinient tools (optional): 
-1. git:
+### Replace some download sources in Python packages & Implement convinient tools (optional): 
+1. scp: ```scp -p ### usr_name@xxx.xxx.xxx.xxx:/source_location/file_name usr_name@xxx.xxx.xxx.xxx:/destination```, where ```###``` is the port number that is exposed from the FRP server.
+2. git:
 ```sudo apt install git-all```
-2. [gpustat](https://github.com/wookayin/gpustat):
+3. [gpustat](https://github.com/wookayin/gpustat):
 ```pip install gpustat``` (gpustat -cp --watch -i 1)
-3. ...
+4. ...
