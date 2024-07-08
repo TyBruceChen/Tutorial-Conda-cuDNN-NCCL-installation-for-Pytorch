@@ -125,7 +125,8 @@ Add anaconda3 to the OS environment path (in my case, it's under ```root``` iden
 export ANACONDA=/root/anaconda3/
 export PATH=$PATH:/root/anaconda3/bin
 ```
-Then logout from the terminal, and log in again, to verify installation, just type ```conda```.
+Then logout from the terminal, and log in again, to verify installation, just type ```conda```. <br>
+An official tutorial from PyTorch to install torch with its dependencies: [https://pytorch.org/get-started/previous-versions/](https://pytorch.org/get-started/previous-versions/)
 
 ### 9. Replace conda's download source (optional, this part is from a [CSDN blog](https://blog.csdn.net/qq_44827847/article/details/133315853)):
 Replace with USTC's conda source:
