@@ -147,4 +147,9 @@ Permanent:
 ```pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/```
 * Verification: ```pip config get global.index-url```
 
-### Replace some download sources in Python packages (optional): 
+### Replace some download sources in Python packages & Install convinient tools (optional): 
+1. git:
+```sudo apt install git-all```
+2. [gpustat](https://github.com/wookayin/gpustat):
+```pip install gpustat``` (gpustat -cp --watch -i 1)
+3. ...
