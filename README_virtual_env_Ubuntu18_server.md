@@ -2,22 +2,22 @@
 
 ### Categories:
 1. [Platform Info](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#1platform-info)
-2. [Source switching for ubuntu18 (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#2-source-switching-for-ubuntu18-optional)
+2. [Source switching for ubuntu18 (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#2source-switching-for-ubuntu18-optional)
 3. [Mounting extra disk space (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#3-mounting-extra-disk-space-optional)
-4. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-5. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-6. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-7. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-8. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-9. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-10. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
-11. [](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md)
+4. [SSH remote login through FRP (Fast Reverse Proxy) (recommended, optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#4-ssh-remote-login-through-frp-fast-reverse-proxy-recommended-optional)
+5. [Install NVIDIA driver](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#5-install-nvidia-driver)
+6. [Install CUDA](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#6-Install-CUDA)
+7. [Add cuDNN plugins](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#7-Add-cuDNN-plugins)
+8. [Install anaconda3](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#8-install-anaconda3)
+9. [Replace conda's download source (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#9-replace-condas-download-source-optional-this-part-is-from-a-csdn-blog)
+10. [Replace pip installation source (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#10-replace-pip-installation-source-optional)
+11. [Replace some download sources in Python packages & Implement convenient tools (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#11-replace-some-download-sources-in-python-packages--implement-convinient-tools-optional)
 
-### 1.Platform Info:
+### 1. Platform Info:
 
 This tutorial is based on the cloud computer (Ubuntu-18-server-image) with 2-core-4-GHz 4G-RAM, 3080-GPU (10G), thanks [USTC (University of Science and Technology of China)'s CENI](https://ceni.ustc.edu.cn/land) providing the source.
 
-### 2.Source switching for ubuntu18 (optional):
+### 2. Source switching for ubuntu18 (optional):
 Back up the source.list first (optional)
 ```
 sudo cp sources.list some_where_you_want
@@ -158,7 +158,7 @@ Permanent:
 ```pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/```
 * Verification: ```pip config get global.index-url```
 
-### 11. Replace some download sources in Python packages & Implement convinient tools (optional): 
+### 11. Replace some download sources in Python packages & Implement convenient tools (optional): 
 1. scp: ```scp -p ### usr_name@xxx.xxx.xxx.xxx:/source_location/file_name usr_name@xxx.xxx.xxx.xxx:/destination```, where ```###``` is the port number that is exposed from the FRP server.
 2. git:
 ```sudo apt install git-all```
