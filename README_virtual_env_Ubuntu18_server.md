@@ -50,6 +50,11 @@ sudo apt-get upgrade
 
 ### 3. Mounting extra disk space (optional):
 
+Here's my brief note on how Unix-based OS names, organizes, and initializes its filesystem:
+
+![Ubuntu-os_1](images/6B9A6D0C-4C7C-4B0B-8EF3-BF538E44F127_1_102_o.jpeg)
+![Ubuntu-os_2](images/1BB0BA75-1D06-4087-9DDB-C85ECFDAA168_1_101_o.jpeg)
+
 ### 4. SSH remote login through [FRP](https://github.com/fatedier/frp) (Fast Reverse Proxy) (recommended, optional):
 
 ### 5. Install NVIDIA driver:
