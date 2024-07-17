@@ -20,7 +20,7 @@ This tutorial is based on the cloud computer (Ubuntu-18-server-image) with 2-cor
 ### 2. Source switching for ubuntu18 (optional):
 Back up the source.list first (optional)
 ```
-sudo cp sources.list some_where_you_want
+sudo cp /etc/apt/sources.list some_where_you_want
 ```
 Replace the content of source.list by ```sudo nano /etc/apt/sources.list``` with (```ctl+a``` to save ```ctl+x``` to exit):
 ```
