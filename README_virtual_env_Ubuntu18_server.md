@@ -57,6 +57,8 @@ Here's my brief note on how Unix-based OS names, organizes, and initializes its 
 
 ### 4. SSH remote login through [FRP](https://github.com/fatedier/frp) (Fast Reverse Proxy) (recommended, optional):
 
+Install ssh server: ```sudo apt install openssh-server```, and check the the validaty of the permission of ssh connection through password: ```nano /etc/ssh/sshd_config``` with lines like ```Permit...``` -> ```yes```.
+
 ### 5. Install NVIDIA driver:
 Preparation: Install necessities first:
 ```
