@@ -4,7 +4,7 @@
 1. [Platform Info](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#1platform-info)
 2. [Source switching for ubuntu18 (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#2source-switching-for-ubuntu18-optional)
 3. [Mounting extra disk space (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#3-mounting-extra-disk-space-optional)
-4. [SSH remote login through FRP (Fast Reverse Proxy) (recommended, optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#4-ssh-remote-login-through-frp-fast-reverse-proxy-recommended-optional)
+4. [SSH remote login through FRP (Fast Reverse Proxy) (recommended, optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#4-ssh-remote-login)
 5. [Install NVIDIA driver](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#5-install-nvidia-driver)
 6. [Install CUDA](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#6-Install-CUDA)
 7. [Add cuDNN plugins](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#7-Add-cuDNN-plugins)
@@ -55,7 +55,8 @@ Here's my brief note on how Unix-based OS names, organizes, and initializes its 
 ![Ubuntu-os_1](images/6B9A6D0C-4C7C-4B0B-8EF3-BF538E44F127_1_102_o.jpeg)
 ![Ubuntu-os_2](images/1BB0BA75-1D06-4087-9DDB-C85ECFDAA168_1_101_o.jpeg)
 
-### 4. SSH remote login through [FRP](https://github.com/fatedier/frp) (Fast Reverse Proxy) (recommended, optional):
+### 4. SSH remote login:
+#### Option 1: Through [FRP](https://github.com/fatedier/frp) (Fast Reverse Proxy) (recommended, optional):
 
 Install ssh server: ```sudo apt install openssh-server```, and check the the validaty of the permission of ssh connection through password: ```nano /etc/ssh/sshd_config``` with lines like ```Permit...``` -> ```yes```.
 
