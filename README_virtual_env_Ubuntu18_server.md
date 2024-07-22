@@ -4,7 +4,7 @@
 1. [Platform Info](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#1platform-info)
 2. [Source switching for ubuntu18 (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#2source-switching-for-ubuntu18-optional)
 3. [Mounting extra disk space (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#3-mounting-extra-disk-space-optional)
-4. [SSH remote login through FRP (Fast Reverse Proxy) (recommended, optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#4-ssh-remote-login)
+4. [SSH remote login through FRP (Fast Reverse Proxy) or ZeroTier (recommended, optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#4-ssh-remote-login)
 5. [Install NVIDIA driver](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#5-install-nvidia-driver)
 6. [Install CUDA](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#6-Install-CUDA)
 7. [Add cuDNN plugins](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#7-Add-cuDNN-plugins)
@@ -59,6 +59,10 @@ Here's my brief note on how Unix-based OS names, organizes, and initializes its 
 #### Option 1: Through [FRP](https://github.com/fatedier/frp) (Fast Reverse Proxy) (recommended, optional):
 
 Install ssh server: ```sudo apt install openssh-server```, and check the the validaty of the permission of ssh connection through password: ```nano /etc/ssh/sshd_config``` with lines like ```Permit...``` -> ```yes```.
+
+#### Option 2: Through [ZeroTier](https://my.zerotier.com/network):
+No third public IP server is required. Nodes require the zerotier controller to build the accessible path first between nodes, then nodes can directly communicate with each other. <br>
+ZeroTier Document: https://docs.zerotier.com/guides/
 
 ### 5. Install NVIDIA driver:
 Preparation: Install necessities first:
