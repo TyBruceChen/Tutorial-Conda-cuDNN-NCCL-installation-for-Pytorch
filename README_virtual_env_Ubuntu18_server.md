@@ -172,7 +172,7 @@ Permanent:
 * Verification: ```pip config get global.index-url```
 
 ### 11. Replace some download sources in Python packages & Implement convenient tools (optional): 
-1. scp: ```scp -p ### usr_name@xxx.xxx.xxx.xxx:/source_location/file_name usr_name@xxx.xxx.xxx.xxx:/destination```, where ```###``` is the port number that is exposed from the FRP server.
+1. scp: ```scp -P ### usr_name@xxx.xxx.xxx.xxx:/source_location/file_name usr_name@xxx.xxx.xxx.xxx:/destination```, where ```###``` is the port number that is exposed from the FRP server.
 2. git:
 ```sudo apt install git-all```
 3. [gpustat](https://github.com/wookayin/gpustat):
