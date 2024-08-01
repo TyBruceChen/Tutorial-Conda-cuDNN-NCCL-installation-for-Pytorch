@@ -1,8 +1,10 @@
 # Configure pytorch for distributed GPU training on Ubuntu 18
 
-In this tutorial, we'll try to realize distributed computing in DNN model training with ```torch.distributed``` (which is based on [NVIDIA Collective Communications Library (NCCL) function](https://developer.nvidia.com/nccl/nccl-legacy-downloads))
+In this tutorial, we'll try to realize distributed computing in DNN model training with ```torch.distributed``` (which is based on [NVIDIA Collective Communications Library (NCCL) function](https://developer.nvidia.com/nccl))
 
 ### Quick start example:
+
+If there's no NCCL installed on your computer, download here: https://developer.nvidia.com/nccl/nccl-legacy-downloads
 
 Download the official example by pytorch: [https://github.com/pytorch/examples/tree/main/imagenet](https://github.com/pytorch/examples/tree/main/imagenet). The example directory should contain the following folders: ```gpu  imagenet  main.py```, where ```imagenet``` should contain the ```train, val, test, ...``` ([download here](https://www.image-net.org/download.php)).
 
