@@ -2,7 +2,7 @@
 
 In this tutorial, we'll try to realize distributed computing in DNN model training with ```torch.distributed``` (which is based on [NVIDIA Collective Communications Library (NCCL) function](https://developer.nvidia.com/nccl/nccl-legacy-downloads))
 
-#### Quick start example:
+### Quick start example:
 
 Download the official example by pytorch: [https://github.com/pytorch/examples/tree/main/imagenet](https://github.com/pytorch/examples/tree/main/imagenet). The example directory should contain the following folders: ```gpu  imagenet  main.py```, where ```imagenet``` should contain the ```train, val, test, ...``` ([download here](https://www.image-net.org/download.php)).
 
@@ -17,7 +17,9 @@ Node 1:
 
 where ```IP_OF_NODE0``` is the accessible IP address of the main (center) node, ```FREEPORT``` is a random accessible port specified by the main (center) node. ```Main (center) node``` is marked with ```rank``` number ```0```. ```world-size``` indicates the scope (number) of the participated nodes. ```rank``` serves as the index to identify each node.
 
-#### Common Errors:
+Nvidia NCCL test case: [https://github.com/NVIDIA/nccl-tests](https://github.com/NVIDIA/nccl-tests)
+
+### Common Problems:
 Display the detailed debug information of nccl: ```export NCCL_DEBUG=INFO```
 1. ethernet card identify error:
 ```
