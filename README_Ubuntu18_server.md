@@ -177,4 +177,7 @@ Permanent:
 ```sudo apt install git-all```
 3. [gpustat](https://github.com/wookayin/gpustat):
 ```pip install gpustat``` (gpustat -cp --watch -i 1)
-4. ...
+4. huggingface source switching (for China mainland): <br>
+make sure ```huggingface_hub``` already installed by ```pip install -U huggingface_hub``` <br>
+switch the mirror source site: ```export HF_ENDPOINT=https://hf-mirror.com```(Linux) or ```$env:HF_ENDPOINT = "https://hf-mirror.com"```(Windows Powershell)
+5. ...
