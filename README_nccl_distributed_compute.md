@@ -34,3 +34,5 @@ Last error:
 [Proxy Service 0] Failed to execute operation Connect from rank 0, retcode 3
 ```
 This is due to multiple IP addresses (```128::1d<40861>``` and ```9001::281<50557>``` in this case) being recognized as accessible paths between nodes, however inaccessible. Thus, we need to specify the correct accessible IP address's ethernet card. First, check with ```ifconfig``` to find the accessible ethernet card's cognomen. Then specify it to nccl by ```export NCCL_SOCKET_IFNAME='ens3 (in my case)'```. To make it applicable at each session: add the ```export``` command to ```~/.bashrc```.
+
+### Step-by-step Guide through DistributedData Parallele (DDP): https://github.com/pytorch/examples/blob/main/distributed/ddp/README.md
