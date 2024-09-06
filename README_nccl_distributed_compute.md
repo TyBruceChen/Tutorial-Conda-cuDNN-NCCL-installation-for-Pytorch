@@ -35,4 +35,10 @@ Last error:
 ```
 This is due to multiple IP addresses (```128::1d<40861>``` and ```9001::281<50557>``` in this case) being recognized as accessible paths between nodes, however inaccessible. Thus, we need to specify the correct accessible IP address's ethernet card. First, check with ```ifconfig``` to find the accessible ethernet card's cognomen. Then specify it to nccl by ```export NCCL_SOCKET_IFNAME='ens3 (in my case)'```. To make it applicable at each session: add the ```export``` command to ```~/.bashrc```.
 
-### Step-by-step Guide through DistributedData Parallele (DDP): https://github.com/pytorch/examples/blob/main/distributed/ddp/README.md
+### Step-by-step Guide through DistributedData Parallele (DDP) with pytorch (torch.nn.parallel.DistributedDataParallel): 
+https://github.com/pytorch/examples/blob/main/distributed/ddp/README.md
+
+### Articulate Tutorials/Manuals on Huggingface Accelerate (a library that specializes in training model with different devices):
+1. Overall tutorial: https://huggingface.co/blog/zh/pytorch-ddp-accelerate-transformers
+2. Write accelerate-enabled code with distributed learning config: https://huggingface.co/docs/accelerate/v0.12.0/en/basic_tutorials/launch
+3. Manual of the ```accelerate``` command: https://huggingface.co/docs/accelerate/v0.34.0/en/package_reference/cli#accelerate-launch
