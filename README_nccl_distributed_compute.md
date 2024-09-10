@@ -38,7 +38,14 @@ This is due to multiple IP addresses (```128::1d<40861>``` and ```9001::281<5055
 ### Step-by-step Guide through DistributedData Parallele (DDP) with pytorch (torch.nn.parallel.DistributedDataParallel): 
 https://github.com/pytorch/examples/blob/main/distributed/ddp/README.md
 
-### Articulate Tutorials/Manuals on Huggingface Accelerate (a library that specializes in training model with different devices):
+### Huggingface Accelerate (a library that specializes in training models with different devices):
+##### Articulate Tutorials/Manuals of Huggingface Accelerate:
 1. Overall tutorial: https://huggingface.co/blog/zh/pytorch-ddp-accelerate-transformers
 2. Write accelerate-enabled code with distributed learning config: https://huggingface.co/docs/accelerate/v0.12.0/en/basic_tutorials/launch
 3. Manual of the ```accelerate``` command: https://huggingface.co/docs/accelerate/v0.34.0/en/package_reference/cli#accelerate-launch
+
+Basic syntax: <BR>```accelerate launch {--accelerate_configuration_command} {your_python_file.py} {the argument you want to pass in to the python_file, e.g.: --arg1 --arg2}```
+<BR>
+To modify ```your_python_file.py``` able with ```Accelerate```: <BR>
+1. Adding lines to titivate the original code (model, optimizer, dataset, etc (refer to above-mentioned tutorials))
+2. encapsulate your training program into main() function so that can be run from ```accelerate``` CLI.
