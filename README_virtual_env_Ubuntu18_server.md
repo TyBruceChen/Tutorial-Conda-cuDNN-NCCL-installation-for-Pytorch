@@ -11,7 +11,7 @@
 8. [Install anaconda3](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#8-install-anaconda3)
 9. [Replace conda's download source (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#9-replace-condas-download-source-optional-this-part-is-from-a-csdn-blog)
 10. [Replace pip installation source (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#10-replace-pip-installation-source-optional)
-11. [Replace some download sources in Python packages & Implement convenient tools (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#11-replace-some-download-sources-in-python-packages--implement-convinient-tools-optional)
+11. [Replace some download sources in Python packages & Implement convenient tools (optional)](https://github.com/TyBruceChen/Tutorial-Conda-cuDNN-NCCL-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#11-replace-some-download-sources-in-python-packages--implement-convenient-tools-optional)
 
 ### 1. Platform Info:
 
