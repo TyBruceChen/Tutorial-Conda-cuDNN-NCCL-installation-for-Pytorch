@@ -12,6 +12,7 @@
 9. [Replace conda's download source (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#9-replace-condas-download-source-optional-this-part-is-from-a-csdn-blog)
 10. [Replace pip installation source (optional)](https://github.com/TyBruceChen/Tutorial-Conda-and-cuDNN-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#10-replace-pip-installation-source-optional)
 11. [Replace some download sources in Python packages & Implement convenient tools (optional)](https://github.com/TyBruceChen/Tutorial-Conda-cuDNN-NCCL-installation-for-Pytorch/blob/main/README_virtual_env_Ubuntu18_server.md#11-replace-some-download-sources-in-python-packages--implement-convenient-tools-optional)
+12. Some modifications and debuggings when deploying to the virtual machine
 
 ### 1. Platform Info:
 
@@ -181,3 +182,8 @@ Permanent:
 make sure ```huggingface_hub``` already installed by ```pip install -U huggingface_hub``` <br>
 switch the mirror source site: ```export HF_ENDPOINT=https://hf-mirror.com```(Linux) or ```$env:HF_ENDPOINT = "https://hf-mirror.com"```(Windows Powershell)
 5. ...
+
+### 12. Debuggings:
+1. The machine failed to connect to the network, e.g.: ```ping  8.8.8.8``` with timeout: <BR>
+this may be due to the impact of the relic/errors at the (past) ethernet card configuration, for detailed solutions: https://ubuntu.com/server/docs/configuring-networks <BR>
+Solution: check with /etc/netplan/some_network_configuration_file, update it, then apply it by ```netplan apply```.
