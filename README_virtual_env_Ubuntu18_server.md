@@ -186,4 +186,4 @@ switch the mirror source site: ```export HF_ENDPOINT=https://hf-mirror.com```(Li
 ### 12. Debuggings:
 1. The machine failed to connect to the network, e.g.: ```ping  8.8.8.8``` with timeout: <BR>
 this may be due to the impact of the relic/errors at the (past) ethernet card configuration, for detailed solutions: https://ubuntu.com/server/docs/configuring-networks <BR>
-Solution: check with /etc/netplan/some_network_configuration_file, update it, then apply it by ```netplan apply```.
+Solution: check with /etc/netplan/some_network_configuration_file, update it, then apply it by ```netplan apply``` (usually delete the old one(top one) and keep the new one (bottom one)).
