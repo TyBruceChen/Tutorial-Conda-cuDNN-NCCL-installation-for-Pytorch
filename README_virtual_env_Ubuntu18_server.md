@@ -187,3 +187,5 @@ switch the mirror source site: ```export HF_ENDPOINT=https://hf-mirror.com```(Li
 1. The machine failed to connect to the network, e.g.: ```ping  8.8.8.8``` with timeout: <BR>
 this may be due to the impact of the relic/errors at the (past) ethernet card configuration, for detailed solutions: https://ubuntu.com/server/docs/configuring-networks <BR>
 Solution: check with /etc/netplan/some_network_configuration_file, update it, then apply it by ```netplan apply``` (usually delete the old one(top one) and keep the new one (bottom one)).
+2. Huggingface model download: ```huggingface-cli download --resume-download [model_idx] --local-dir [path]``` (original source) \
+```export HF_ENDPOINT=https://hf-mirror.com``` (switch CN source for Linux)  ```$env:HF_ENDPOINT = "https://hf-mirror.com"``` (CN source for Windows) from [CSDN](https://blog.csdn.net/weixin_43431218/article/details/135403324)
