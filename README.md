@@ -48,7 +48,7 @@ should return ```True``` value
 For Windows, make sure the following ```PATH``` are properly added into your System Environment after installing anaconda/miniconda: \
 ![image](https://github.com/user-attachments/assets/05632f29-d5a4-4ac4-9978-cb90ae9de49e) \
 This can be verified through ```where conda``` and ```where python```. \
-For VScode, there's probably a display issue when activating conda environments; see here: [activate_issue](https://github.com/microsoft/vscode-python/wiki/Activate-Environments-in-Terminal-Using-Environment-Variables). To activate Environment, use ```ctrl+ shift+ p``` to select the wanted conda environment as the interpreter. Then, open the terminal.
+For VScode, there's probably a display issue when activating conda environments; see here: [activate_issue](https://github.com/microsoft/vscode-python/wiki/Activate-Environments-in-Terminal-Using-Environment-Variables). To activate Environment, use ```ctrl+ shift+ p``` to select the wanted conda environment as the interpreter. Then, open the terminal. When downloading python packages at conda environs, do not use Clash Verge proxy: [SSLerror by Clash Verge April 4, 2025](https://github.com/zzzgydi/clash-verge/issues/888).
 
 ### 8. Some torch functions that may helps debugging if error occurs:
 
