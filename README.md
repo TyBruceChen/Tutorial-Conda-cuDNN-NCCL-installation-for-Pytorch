@@ -44,6 +44,12 @@ torch.cuda.is_available()
 ```
 should return ```True``` value
 
-### 7. Some torch functions that may helps debugging if error occurs:
+### 7. Conda Installation:
+For Windows, make sure the following ```PATH``` are properly added into your System Environment after installing anaconda/miniconda: \
+![image](https://github.com/user-attachments/assets/05632f29-d5a4-4ac4-9978-cb90ae9de49e) \
+This can be verified through ```where conda``` and ```where python```. \
+For VScode, there's probably a display issue when activating conda environments; see here: [activate_issue](https://github.com/microsoft/vscode-python/wiki/Activate-Environments-in-Terminal-Using-Environment-Variables).
+
+### 8. Some torch functions that may helps debugging if error occurs:
 
 Click [here](https://github.com/TyBruceChen/Conda-Installation-Tutorial-Windows-/blob/main/debug.ipynb) 
